@@ -13,9 +13,9 @@
 ## Description
 To do benchmarks and detection using the optimisations of TensorRT, this script was build by following NVIDIA's link **https://docs.nvidia.com/deeplearning/frameworks/tf-trt-user-guide/index.html**, this is an approach to use TensorRT directly by using the TF-TRT Python API. Both of the frozen graph of YOLOv3 and YOLOv3-Tiny was generated with the github repository of mystic123 **https://github.com/mystic123/tensorflow-yolo-v3**, the main code is [trt_yolov3.py], this is an example about how to use it to implement YOLOv3 TF-TRT using an input image dog.jpg with an input resolution of HxW = 416x416, FP16 precision mode and a batch size of 1. 
 
-==============================================================================================================================================================================================================
+==================================================================================================================================================================
 python3 trt_yolov3.py --image dog.jpg --model yolov3 --precision FP16 --batch 1 
-==============================================================================================================================================================================================================
+==================================================================================================================================================================
 CLI arguments:
   -h, --help            show this help message and exit
   -i INPUT, --input INPUT, --image INPUT
@@ -38,6 +38,13 @@ First, you have to load both of the TensorFlow model and the input image and pre
 
 ## Prerequisites
 
+Download YOLOv3 and YOLOv3-Tiny which was generated using mystic123 github https://github.com/mystic123/tensorflow-yolo-v3 with the following commands :
+$ wget "https://drive.google.com/uc?export=download&id=1euQo121u5x3OPvdYNZpheqiub5bzJbpy" -O frozen_darknet_yolov3_tiny_model.pb
+$ wget "https://drive.google.com/uc?export=download&id=1t-ZygeJpTwzZ3i0Q374VZo5Omm9U2Xz_" -O frozen_darknet_yolov3_model.pb
+
+	
+
+	
 You have to install Tensorflow 1.15 following this command line :
 $ sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 'tensorflow<2'
 
