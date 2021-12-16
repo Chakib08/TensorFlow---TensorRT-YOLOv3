@@ -48,6 +48,7 @@ Download YOLOv3 and YOLOv3-Tiny which was generated using mystic123 github https
 
 	
 You have to install Tensorflow 1.15 following this command line :
+	
 `$ sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 'tensorflow<2'`
 
 
@@ -57,6 +58,7 @@ You have to install Tensorflow 1.15 following this command line :
 	`
 
 2.  Build TensorRTEngineOp in the graph using the method convert.
+	
 	`python3 trt_yolov3.py --image dog.jpg --model yolov3 --precision FP16 --batch 1`
 	
 	2021-09-16 17:33:15.159503: I tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:733] Building a new TensorRT engine for import/TRTEngineOp_0 input shapes: [[1,416,416,3]]
