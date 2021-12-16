@@ -2,7 +2,11 @@
 TensorFlow to TensorRT converter with TensorFlow v1.15
 Workflow with a fozen graph
 
-Both of YOLOv3 and YOLOv3-Tiny frozen graphs were generated using mystic123 github https://github.com/mystic123/tensorflow-yolo-v3
+Both of YOLOv3 and YOLOv3-Tiny frozen graphs have to be generated using mystic123 github https://github.com/mystic123/tensorflow-yolo-v3 or downloading from
+the drive :
+
+YOLOv3-Tiny : https://drive.google.com/file/d/1euQo121u5x3OPvdYNZpheqiub5bzJbpy/view?usp=sharing
+YOLOv3 : https://drive.google.com/file/d/1t-ZygeJpTwzZ3i0Q374VZo5Omm9U2Xz_/view?usp=sharing
 """
 
 import tensorflow as tf
