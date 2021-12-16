@@ -39,14 +39,14 @@ First, you have to load both of the TensorFlow model and the input image and pre
 ## Prerequisites
 
 Download YOLOv3 and YOLOv3-Tiny which was generated using mystic123 github https://github.com/mystic123/tensorflow-yolo-v3 with the following commands :
-$ wget "https://drive.google.com/uc?export=download&id=1euQo121u5x3OPvdYNZpheqiub5bzJbpy" -O frozen_darknet_yolov3_tiny_model.pb
-$ wget "https://drive.google.com/uc?export=download&id=1t-ZygeJpTwzZ3i0Q374VZo5Omm9U2Xz_" -O frozen_darknet_yolov3_model.pb
+`$ wget "https://drive.google.com/uc?export=download&id=1euQo121u5x3OPvdYNZpheqiub5bzJbpy" -O frozen_darknet_yolov3_tiny_model.pb`
+`$ wget "https://drive.google.com/uc?export=download&id=1t-ZygeJpTwzZ3i0Q374VZo5Omm9U2Xz_" -O frozen_darknet_yolov3_model.pb`
 
 	
 
 	
 You have to install Tensorflow 1.15 following this command line :
-$ sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 'tensorflow<2'
+`$ sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v46 'tensorflow<2'`
 
 
 ## Running the sample
