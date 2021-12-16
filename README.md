@@ -39,7 +39,9 @@ First, you have to load both of the TensorFlow model and the input image and pre
 ## Prerequisites
 
 Download YOLOv3 and YOLOv3-Tiny which was generated using mystic123 github https://github.com/mystic123/tensorflow-yolo-v3 with the following commands :
+	
 `$ wget "https://drive.google.com/uc?export=download&id=1euQo121u5x3OPvdYNZpheqiub5bzJbpy" -O frozen_darknet_yolov3_tiny_model.pb`
+	
 `$ wget "https://drive.google.com/uc?export=download&id=1t-ZygeJpTwzZ3i0Q374VZo5Omm9U2Xz_" -O frozen_darknet_yolov3_model.pb`
 
 	
@@ -67,7 +69,7 @@ You have to install Tensorflow 1.15 following this command line :
 	2021-09-16 17:38:36.383982: I tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:733] Building a new TensorRT engine for import/TRTEngineOp_1 input shapes: [[1,10647,1], [1,10647,1]]
 	Latency = 19,41 ms | FPS = 51,53
 	Saved image with bounding boxes of detected objects to dog_yolov3_FP16_bs1.png.
-	```
+	
 
 
 
