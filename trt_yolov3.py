@@ -61,7 +61,7 @@ output_node_str = "import/output_boxes:0"
 if args.loadEngine is None:
     model = args.model
     if model == 'yolov3-tiny':
-        path_frozen_graph = "tiny_yolo/frozen_darknet_yolov3_tiny_model.pb"
+        path_frozen_graph = "frozen_darknet_yolov3_tiny_model.pb"
     elif model == 'yolov3':
         path_frozen_graph = "frozen_darknet_yolov3_model.pb"
 
