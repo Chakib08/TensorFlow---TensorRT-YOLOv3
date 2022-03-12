@@ -43,8 +43,8 @@ Download YOLOv3-Tiny which was generated using mystic123 github https://github.c
 
 And for YOLOv3 use the following link to download :
 	
-https://drive.google.com/uc?export=download&id=1t-ZygeJpTwzZ3i0Q374VZo5Omm9U2Xz_
 
+- [Download YOLOv3 frozen model](https://drive.google.com/uc?export=download&id=1t-ZygeJpTwzZ3i0Q374VZo5Omm9U2Xz_)
 	
 
 	
