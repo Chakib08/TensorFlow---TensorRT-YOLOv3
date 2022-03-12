@@ -60,6 +60,9 @@ If you are using a personel computer with a linux distribution like Ubuntu, you 
 3.  Using anaconda with the CLI :
 `$ sudo conda install tensorflow==1.15`
 
+You need also to install this library for drawing if not installed : 
+- Pillow : `$ sudo conda install pillow`
+
 ## Running the sample
 
 1.  Get your custom frozen graph or directly run the script trt_yolov3.py to use YOLOv3 or YOLOv3-Tiny.
