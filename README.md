@@ -90,7 +90,7 @@ The following resources provide a deeper understanding about the model used in t
 - [TensorFlow-TensorRT](https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html)
 
 # Changelog
-September 2021 - Stage compet - Evaluation des solutions de Deep Learning.
+September 2021 - Object Detection Algorithm - YOLOv3 - TensorFlow - TensorRT
 
 # Known issues
 
