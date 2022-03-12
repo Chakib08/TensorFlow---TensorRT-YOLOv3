@@ -33,11 +33,16 @@ parser.add_argument('-a', '--standAlonePlan', help="Generate A Stand-Alone Tenso
 parser.add_argument('-e', '--placeholders', help="Get all placeholders names", action='store_true')
 parser.add_argument('-t', '--tensorMap', help="Display the Tensor's names map", action='store_true')
 parser.add_argument('-v', '--visualizeGraph', help="Get the URL to view the graph on TensorBoard", action='store_true')
+parser.add_argument('-f', '--frames', help="Set the number of frames to benchmark", type=int)
 
 args = parser.parse_args()
 
 # Inference iterations
-nbr_frames = 100
+if args.frames is not None:
+    nbr_frames = args.frames
+else:
+    nbr_frames = 100
+
 # Input batch size
 if args.batch is not None:
     BATCH_SIZE = args.batch
