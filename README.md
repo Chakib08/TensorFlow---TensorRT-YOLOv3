@@ -111,7 +111,7 @@ September 2021 - Stage compet - Evaluation des solutions de Deep Learning.
 	[tf-yolo.py] -> An additional script to benchmarks YOLOv3 and YOLOv3-Tiny without having a prediction in output only with using TensorFlow (Optionnal and without optimizations).
 	[trt_yolov3.py] -> The main script of the project which allows us to do benchmarks with of YOLOv3 and YOLOv3-Tiny according to the parameters set in the CLI as precision and batch.
 
-**Folders and files**
+**Folder/Files and scripts**
 	[frozen_darknet_yolov3_model.pb] -> YOLOv3 frozen model generated with the github of **mystic123**.
 	[tiny_yolo/frozen_darknet_yolov3_model.pb] -> YOLOv3-Tiny frozen model generated with the github of **mystic123**
 	[yolo_v3-coco.inference_only.frozen.pb] -> YOLOv3 withoud post-processing used only to benchmarks YOLOv3.
