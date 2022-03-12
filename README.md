@@ -8,7 +8,7 @@
 - [Additional resources](#additional-resources)
 - [Changelog](#changelog)
 - [Known issues](#known-issues)
-- [Folder/Files and scripts](#Folder/Files-and-scripts)
+- [Details](#Details)
 
 ## Description
 To do benchmarks and detection using the optimisations of TensorRT, this script was build by following NVIDIA's link **https://docs.nvidia.com/deeplearning/frameworks/tf-trt-user-guide/index.html**, this is an approach to use TensorRT directly by using the TF-TRT Python API. Both of the frozen graph of YOLOv3 and YOLOv3-Tiny was generated with the github repository of mystic123 **https://github.com/mystic123/tensorflow-yolo-v3**, the main code is [trt_yolov3.py], this is an example about how to use it to implement YOLOv3 TF-TRT using an input image dog.jpg with an input resolution of HxW = 416x416, FP16 precision mode and a batch size of 1. 
@@ -104,20 +104,20 @@ September 2021 - Stage compet - Evaluation des solutions de Deep Learning.
 2. The Non-max suppression doesn't work for YOLOv3-Tiny, so we have to adjust some parameters like the threshold of iou and nms threshold, anyway we can still do benchmarks to evaluate the model and the hardware using TensorRT with API.
 
 
-# Folders/Files and scripts
+# Details
 
 **Scripts**
-	[utils.py] -> Include the preprocess and the post-process (Non-maximum Suppression) for both of YOLOv3 et YOLOv3-Tiny.
-	[tf-yolo.py] -> An additional script to benchmarks YOLOv3 and YOLOv3-Tiny without having a prediction in output only with using TensorFlow (Optionnal and without optimizations).
-	[trt_yolov3.py] -> The main script of the project which allows us to do benchmarks with of YOLOv3 and YOLOv3-Tiny according to the parameters set in the CLI as precision and batch.
+- [utils.py]  : Include the preprocess and the post-process (Non-maximum Suppression) for both of YOLOv3 et YOLOv3-Tiny.
+- [tf-yolo.py] : An additional script to benchmarks YOLOv3 and YOLOv3-Tiny without having a prediction in output only with using TensorFlow (Optionnal and without optimizations).
+- [trt_yolov3.py] : The main script of the project which allows us to do benchmarks with of YOLOv3 and YOLOv3-Tiny according to the parameters set in the CLI as precision and batch.
 
 **Folder/Files and scripts**
-	[frozen_darknet_yolov3_model.pb] -> YOLOv3 frozen model generated with the github of **mystic123**.
-	[tiny_yolo/frozen_darknet_yolov3_model.pb] -> YOLOv3-Tiny frozen model generated with the github of **mystic123**
-	[yolo_v3-coco.inference_only.frozen.pb] -> YOLOv3 withoud post-processing used only to benchmarks YOLOv3.
-	[dog.jpg] -> Test image
-	[dog_yolov3_FP16_bs1.png] -> Output image with detections using YOLOv3 TF-TRT FP16
-	[dog_yolov3_FP32_bs1.png] -> Output image with detections using YOLOv3 TF-TRT FP32
+- [frozen_darknet_yolov3_model.pb] : YOLOv3 frozen model generated with the github of **mystic123**.
+- [tiny_yolo/frozen_darknet_yolov3_model.pb] : YOLOv3-Tiny frozen model generated with the github of **mystic123**
+- [yolo_v3-coco.inference_only.frozen.pb] : YOLOv3 withoud post-processing used only to benchmarks YOLOv3.
+- [dog.jpg] : Test image
+- [dog_yolov3_FP16_bs1.png] : Output image with detections using YOLOv3 TF-TRT FP16
+- [dog_yolov3_FP32_bs1.png] : Output image with detections using YOLOv3 TF-TRT FP32
 	
 	
 
