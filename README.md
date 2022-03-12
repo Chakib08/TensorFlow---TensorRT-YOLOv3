@@ -37,11 +37,13 @@ First, you have to load both of the TensorFlow model and the input image and pre
 
 ## Prerequisites
 
-Download YOLOv3 and YOLOv3-Tiny which was generated using mystic123 github https://github.com/mystic123/tensorflow-yolo-v3 with the following commands :
+Download YOLOv3-Tiny which was generated using mystic123 github https://github.com/mystic123/tensorflow-yolo-v3 with the following commands :
 	
 `$ wget "https://drive.google.com/uc?export=download&id=1euQo121u5x3OPvdYNZpheqiub5bzJbpy" -O frozen_darknet_yolov3_tiny_model.pb`
+
+And for YOLOv3 use the following link to download :
 	
-`$ wget "https://drive.google.com/uc?export=download&id=1t-ZygeJpTwzZ3i0Q374VZo5Omm9U2Xz_" -O frozen_darknet_yolov3_model.pb`
+https://drive.google.com/uc?export=download&id=1t-ZygeJpTwzZ3i0Q374VZo5Omm9U2Xz_
 
 	
 
@@ -67,14 +69,6 @@ If you are using a personel computer with a linux distribution like Ubuntu, you 
 	
 	`python3 trt_yolov3.py --image dog.jpg --model yolov3 --precision FP16 --batch 1`
 	
-	2021-09-16 17:33:15.159503: I tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:733] Building a new TensorRT engine for import/TRTEngineOp_0 input shapes: [[1,416,416,3]]
-	2021-09-16 17:33:15.321329: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libnvinfer.so.7
-	2021-09-16 17:33:16.390368: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libnvinfer_plugin.so.7
-	2021-09-16 17:37:35.535484: I tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:733] Building a new TensorRT engine for import/detector/yolo-v3/TRTEngineOp_3 input shapes: [[1,26,26,256], [1,512,26,26]]
-	2021-09-16 17:37:44.832719: I tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:733] Building a new TensorRT engine for import/detector/yolo-v3/TRTEngineOp_4 input shapes: [[1,52,52,128], [1,256,52,52]]
-	2021-09-16 17:37:51.874350: I tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:733] Building a new TensorRT engine for import/detector/yolo-v3/TRTEngineOp_5 input shapes: [[1,507,2], [1,507,1], [1,507,2], [1,507,80], [1,2028,2], [1,2028,1], [1,2028,2], [1,2028,80], [1,8112,2], [1,8112,1], [1,8112,2], [1,8112,80]]
-	2021-09-16 17:38:23.928248: I tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:733] Building a new TensorRT engine for import/TRTEngineOp_2 input shapes: [[1,10647,1], [1,10647,1]]
-	2021-09-16 17:38:36.383982: I tensorflow/compiler/tf2tensorrt/kernels/trt_engine_op.cc:733] Building a new TensorRT engine for import/TRTEngineOp_1 input shapes: [[1,10647,1], [1,10647,1]]
 	Latency = 19,41 ms | FPS = 51,53
 	Saved image with bounding boxes of detected objects to dog_yolov3_FP16_bs1.png.
 	
