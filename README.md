@@ -8,7 +8,7 @@
 - [Additional resources](#additional-resources)
 - [Changelog](#changelog)
 - [Known issues](#known-issues)
-- [Folder/Files and scripts](#folders-and-scripts)
+- [Folder/Files and scripts](#Folder/Files-and-scripts)
 
 ## Description
 To do benchmarks and detection using the optimisations of TensorRT, this script was build by following NVIDIA's link **https://docs.nvidia.com/deeplearning/frameworks/tf-trt-user-guide/index.html**, this is an approach to use TensorRT directly by using the TF-TRT Python API. Both of the frozen graph of YOLOv3 and YOLOv3-Tiny was generated with the github repository of mystic123 **https://github.com/mystic123/tensorflow-yolo-v3**, the main code is [trt_yolov3.py], this is an example about how to use it to implement YOLOv3 TF-TRT using an input image dog.jpg with an input resolution of HxW = 416x416, FP16 precision mode and a batch size of 1. 
