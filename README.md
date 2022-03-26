@@ -54,11 +54,12 @@ If you are using an NVIDIA Jetson board, to install Tensorflow 1.15 following th
 
 If you are using a personel computer with a linux distribution like Ubuntu, you can install Tensorflow 1.15 :
 1.  Using pip :
-`$ sudo pip3 install tensorflow==1.15`
+`$ pip3 install tensorflow==1.15`
 2.  Using anaconda with UI, by launching anaconda with the command line :
 `$ anaconda-navigator`
 3.  Using anaconda with the CLI :
-`$ sudo conda install tensorflow==1.15`
+`$ conda create -n tf-trt python=3.6`
+`$ conda install tensorflow==1.15`
 
 You need also to install this library for drawing if not installed : 
 - Pillow : `$ sudo conda install pillow`
