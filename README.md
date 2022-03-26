@@ -68,7 +68,7 @@ If you are using a personel computer with a linux distribution like Ubuntu, you 
 `$ conda install tensorflow==1.15`
 
 You need also to install this library for drawing if not installed : 
-- Pillow : `$ sudo conda install pillow`
+- Pillow : `$ conda install pillow`
 
 ## Running the sample
 
